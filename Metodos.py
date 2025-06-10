@@ -29,13 +29,13 @@ def quantidademanifestações(conexão):
     quantidademanifestacoes = listarBancoDados(conexão, consulta)
     print('Existem', quantidademanifestacoes[0][0], 'manifestações!')
 
-    def ExcluirManifestacao(conexão):
-        codigo = int(input("Digite o código da manifestação que deseja excluir: "))
-        consulta = 'delete from manifestacoes where codigo_manifestacao = %s'
-        dados = [codigo]
-        linhasAfetadas = excluirBancoDados(conexão, consulta, dados)
-        if linhasAfetadas == 0:
-            print("Não existe Manifestações para o código informado.")
-        else:
-            print("Manifestação removida com sucesso!!!")
+def ExcluirManifestacao(conexão):
+    codigo = int(input("Digite o código da manifestação que deseja excluir: "))
+    consulta = 'delete from manifestacoes where codigo_manifestacao = %s'
+    dados = [codigo]
+    linhasAfetadas = excluirBancoDados(conexão, consulta, dados)
+    if linhasAfetadas == 0:
+        print("Não existe Manifestações para o código informado.")
+    else:
+        print("Manifestação removida com sucesso!!!")
 
