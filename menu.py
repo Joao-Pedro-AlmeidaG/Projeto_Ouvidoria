@@ -14,7 +14,7 @@ while opcao !=7:
 
 
     elif opcao == 3:
-
+        CriarManifestacoes(conexão)
 
     elif opcao == 4:
         quantidademanifestações(conexão)
