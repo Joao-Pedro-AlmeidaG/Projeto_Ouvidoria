@@ -24,6 +24,7 @@ while opcao !=7:
 
 
     elif opcao == 6:
+        ExcluirManifestacao(conexão)
 
 
     elif opcao  != 7:
