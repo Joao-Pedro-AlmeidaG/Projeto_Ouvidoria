@@ -11,7 +11,7 @@ while opcao !=7:
         ListarManifestacoes(conexão)
 
     elif opcao == 2:
-
+        listarporTipo(conexão)
 
     elif opcao == 3:
         CriarManifestacoes(conexão)
