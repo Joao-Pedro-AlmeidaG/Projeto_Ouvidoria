@@ -17,7 +17,7 @@ while opcao !=7:
 
 
     elif opcao == 4:
-
+        quantidademanifestações(conexão)
 
     elif opcao == 5:
         PesquisarManifestacao(conexão)
