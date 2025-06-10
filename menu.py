@@ -21,6 +21,7 @@ while opcao !=7:
 
 
     elif opcao == 5:
+        PesquisarManifestacao(conexão)
 
 
     elif opcao == 6:
