@@ -23,3 +23,8 @@ def PesquisarManifestacao(conexão):
     else:
         print("Manifestação encontrada")
         print("-Titulo da manifestação:",manifestacoes[0][1],",Descrição:",manifestacoes[0][2],",Autor:",manifestacoes[0][3],",Tipo:",manifestacoes[0][4])
+        
+def quantidademanifestações(conexão):
+    consulta = 'select count(*) from manifestacoes'
+    quantidademanifestacoes = listarBancoDados(conexão, consulta)
+    print('Existem', quantidademanifestacoes[0][0], 'manifestações!')
