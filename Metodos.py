@@ -13,16 +13,6 @@ def ListarManifestacoes(conexão):
             print("\n- Código da Manifestação:", item[0], "Titulo da Manifestação:", item[1], "Autor:", item[3],",Descrição:", item[2], ",Tipo da manifestação: ", item[4])
 
 
-
-
-
-
-
-
-
-
-
-
 def PesquisarManifestacao(conexão):
     codigo = input("Digite o código da manifestação ser pesquisado: ")
     consulta = 'select * from manifestacoes where codigo_manifestacao = %s'
